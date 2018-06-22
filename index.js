@@ -16,7 +16,6 @@ csv()
             process.exit(1)
         }
         fs.writeFile('customer-data.json', JSON.stringify(arr, null, 2), (error) => {
-            console.log(arr)
             if(error) {
                 console.log(`Error: ${error}`);
                 process.exit(1)
